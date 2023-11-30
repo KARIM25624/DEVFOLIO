@@ -1,0 +1,386 @@
+:root{
+    --main-color:#0078ff;
+}
+.line{
+    width: 40px;
+        height: 5px;
+        background-color: #0078ff;
+        margin: 0 auto;
+}
+.section-title h3 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1e1e1e;
+    text-transform: uppercase;
+}
+.t-left::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+/* start navbar */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.877);
+}
+nav .navbar-brand{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.navbar-nav>li>a{
+    font-weight: bold;
+    color: white;
+    
+}
+nav .nav-link{
+    position: relative;
+    color: white;
+    
+}
+nav .nav-link:hover{
+    color: white;
+}
+nav .nav-link:hover::after{
+    width: 80%;
+}
+nav .nav-link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+/* nav end */
+
+/* start header */ 
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url(./../imgs/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+header .content h1{
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+header .content span{
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+header .content .typing::after{
+    content: ' |';
+    animation: typing 5s infinite;
+}
+@keyframes typing {
+    0%{
+        content: ' |';
+    }
+    5%{
+        content: ' Free |';
+    }
+    10%{
+        content: ' Freelan |';
+    }
+    15%{
+        content: ' Freelancer |';
+    }
+    20%{
+        content: ' Freelan |';
+    }
+    25%{
+        content: ' Free |';
+    }
+    30%{
+        content: ' |';
+    }
+    35%{
+        content: ' Dev |';
+    }
+    40%{
+        content: ' Develo |';
+    }
+    45%{
+        content: ' Developer |';
+    }
+    50%{
+        content: ' Develo |';
+    }
+    55%{
+        content: ' Dev |';
+    }
+    60%{
+        content: ' |';
+    }
+    65%{
+        content: ' Des |';
+    }
+    70%{
+        content: ' Design |';
+    }
+    75%{
+        content: ' Designer |';
+    }
+    80%{
+        content: ' Design |';
+    }
+    85%{
+        content: ' Des |';
+    }
+    90%{
+        content: ' |';
+    }
+    95%{
+        content: ' Photografer|';
+    }
+    100%{
+        content: ' |';
+    }
+
+}
+
+/* end header */
+/* about start */
+.about .box-shadow{
+    position: relative;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        z-index: 2;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.about .s-item p{
+margin: 0;
+}
+/* about end */
+/* services start */
+.services .service-box{
+        background-color: #fff;
+        padding: 2.5rem 1.3rem;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        text-align: center;
+}
+.services .service-box .service-ico{
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+.services .service-box .service-ico .ico-circle{
+    height: 100px;
+        width: 100px;
+        font-size: 2rem;
+        border-radius: 50%;
+        line-height: 1.55;
+        margin: 0 auto;
+        text-align: center;
+        box-shadow: 0 0 0 10px #0078ff;
+        display: block;
+}
+.services .service-box .service-ico .ico-circle:hover{
+    box-shadow: 0 0 0 10px #a0bad8;
+    background-color: #0078ff;
+}
+.services .service-box .service-ico i{
+    color: #072649;
+}
+.services .service-box .service-ico:hover i{
+    color: white;
+}
+/* services end */
+/* description start */
+.description{
+    background-image:linear-gradient(rgba(5, 102, 237, 0.868), rgba(5, 102, 237, 0.868))  , url(./../imgs/post-3.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+}
+
+.description .content .icon{
+    color: white;
+    border: 5px solid ;
+    border-color: aliceblue;
+    border-radius: 50%;
+    font-size: 25px;
+    
+}
+/* work start */
+.portfolio .work-box{
+    background-color: white;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.3);
+}
+.portfolio .img {
+    
+     overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .img:hover img{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.portfolio .work-content h2{
+    color: black;
+    font-weight: 400;
+}
+.work-content .w{
+    color: var(--main-color);
+}
+.work-content i{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* work end */
+/* carousel start */
+.carousel-part{
+    background-image: url(./../imgs/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.c-layer{
+    background-color: rgba(5, 102, 237, 0.768);
+}
+.carousel-indicators{
+    top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+/* carousel end */
+/* blog start */
+.blog .card{
+        box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.3);
+}
+.card-body{
+    background-color: white;
+}
+.card-body span{
+background-color: var(--main-color);
+color: white;
+
+text-transform: uppercase;
+left: 50%;
+top: 0;
+transform: translate(-50% , -50%);
+}
+.card-body h5:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+.card-body .card-text{
+    color: rgb(106, 101, 101);
+}
+.card .card-footer .icon{
+    width: 50px;
+    height: 50px;
+}
+.card .card-footer .title{
+    color: gray;
+}
+.card-img-top:hover{
+    cursor: pointer;
+}
+.card-footer .f-title:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* blog end */
+/* contact start */
+.contact{
+    background-image: url(./../imgs/overlay-bg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+}
+.contact .overlay{
+    position: absolute;
+        top: 0;
+        left: 0px;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        background-color: var(--main-color);
+}
+.contact .box-shadow{
+    padding: 3rem 1.25rem;
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        z-index: 2;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.t-left{
+    font-weight: bold;
+}
+.contact .form-group input{
+       width: 100%;
+       outline: none;
+
+        
+}
+.contact .form-group input:focus{
+    border-color: #0078ff;
+    box-shadow: 0px 0px 1px 1px #3584df;
+    outline: none;
+}
+.form-group .control{
+    width: 100%;
+        outline: none;
+}
+.control:focus{
+    border-color: #0078ff;
+        box-shadow: 0px 0px 1px 1px #3584df;
+}
+.button{
+    background: #0078ff;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        border-radius: 5rem;
+        font-size: 1.3rem;
+}
+.button:hover{
+    border: 2px solid;
+    border-color: #81a8d4;
+    background-color: #116bd2;
+    transition: 0.4s;
+}
+.contact .ico{
+    list-style-type: none;
+    padding-left: 0;
+        margin-bottom: 0;
+}
+.ico span {
+    color: #0078ff;
+    margin-right: 10px;
+}
+.contact .s-icon{
+    padding-left: 0;
+        margin-bottom: 0;
+}
+.contact .icon{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border: 3px solid;
+    border-color: var(--main-color);
+}
+.contact .icon:hover{
+    border-color: #81a8d4;
+    background-color: var(--main-color);
+    color: white;
+}
+/* contact end */
+/* footer start */
+.creat a{
+    text-decoration: none;
+    color: white;
+}
+/* footer end */
